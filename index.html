@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Diportella Laser | Medicina Estética & Saúde</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lenis CSS (Smooth Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Arquivo CSS Principal -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- PRELOADER -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <span class="logo-text preloader-logo">DIPORTELLA <span>LASER</span></span>
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor Magnético Customizado -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- HEADER / NAVEGAÇÃO -->
+    <header id="header" class="header">
+        <div class="header-container">
+            <div class="header-logo">
+                <span class="logo-text">DIPORTELLA <span>LASER</span></span>
+            </div>
+
+            <!-- Navegação Desktop -->
+            <nav class="nav-desktop">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">A Clínica</a>
+                <a href="#especialidades">Especialidades</a>
+                <a href="#tratamentos">Tratamentos</a>
+                <a href="#resultados">Resultados</a>
+                <a href="https://wa.link/br26p5" target="_blank" rel="noopener noreferrer" class="btn-header">Agendar Consulta</a>
+            </nav>
+
+            <!-- Botão Menu Mobile -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Subjanela / Drawer do Menu Mobile -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-card">
+            <div class="mobile-menu-header">
+                <span class="logo-text">DIPORTELLA <span>LASER</span></span>
+                <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Fechar Menu">&times;</button>
+            </div>
+
+            <nav class="mobile-nav-links">
+                <a href="#inicio" class="mobile-link">Início</a>
+                <a href="#sobre" class="mobile-link">A Clínica</a>
+                <a href="#especialidades" class="mobile-link">Especialidades</a>
+                <a href="#tratamentos" class="mobile-link">Tratamentos</a>
+                <a href="#resultados" class="mobile-link">Resultados</a>
+                <a href="https://wa.link/br26p5" target="_blank" rel="noopener noreferrer" class="btn-mobile-cta mobile-link">Agendar Consulta</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero hero-fullscreen">
+        <!-- Vídeo de fundo inserido aqui -->
+    <video autoplay muted loop playsinline class="hero-video-bg">
+        <source src="video/hero_dianete.mp4" type="video/mp4">
+    </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-container hero-container-centered">
+            <div class="hero-content">
+
+                <h1 class="hero-title">
+                    A arte de realçar a sua <em>beleza natural</em>.
+                </h1>
+
+                <p class="hero-description">
+                    Tratamentos de alta precisão desenvolvidos para proporcionar rejuvenescimento harmonioso com máxima segurança e discrição.
+                </p>
+
+                <div class="btn-group">
+                    <a href="https://wa.link/br26p5" target="_blank" rel="noopener noreferrer" class="btn-glow">Agendar Avaliação</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE A PROFISSIONAL (DESIGN EXATO DA FOTO) -->
+    <section id="sobre" class="section-padding reveal" data-delay="0.3">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Coluna da Esquerda: Imagem + Badge de Anos -->
+                <div class="about-image-wrapper reveal-left" data-delay="0.2">
+                    <div class="about-image-card">
+                        <img src="https://images.unsplash.com/photo-1594824813572-98c8f1273b41?auto=format&fit=crop&w=800&q=80" alt="Dra. Dianete Portella">
+                        
+                        <div class="about-experience-badge">
+                            <span class="exp-number">10+</span>
+                            <span class="exp-text">ANOS DE EXCELÊNCIA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna da Direita: Conteúdo de Texto e Destaques -->
+                <div class="about-content reveal-right" data-delay="0.3">
+                    <span class="about-badge">SOBRE A PROFISSIONAL</span>
+                    <h2 class="about-title">Dra. Dianete Portella</h2>
+                    
+                    <div class="about-quote-wrapper">
+                        <div class="about-quote">
+                            Ciência, precisão e sensibilidade artística dedicadas à harmonização e saúde da sua pele.
+                        </div>
+                        <div class="quote-dot-icon">
+                            <span class="inner-dot"></span>
+                        </div>
+                    </div>
+
+                    <p class="about-description">
+                        Com uma trajetória pautada pela procura incessante da excelência e da naturalidade, a Dra. Dianete Portella combina tecnologia médica de vanguarda com um olhar individualizado e humanizado para cada paciente.
+                    </p>
+                    <p class="about-description">
+                        O seu compromisso vai além da estética: é proporcionar uma experiência de bem-estar integral, devolvendo a autoconfiança através de procedimentos minimamente invasivos, seguros e com resultados sofisticados.
+                    </p>
+
+                    <!-- Cards de Destaque Lado a Lado -->
+                    <div class="about-highlights-grid">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <div class="highlight-text">
+                                <h4>Protocolos Exclusivos</h4>
+                                <p>Tratamentos desenhados sob medida para as necessidades da sua pele.</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <div class="highlight-text">
+                                <h4>Segurança & Tecnologia</h4>
+                                <p>Equipamentos de última geração certificados com rigor científico.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO ESPECIALIDADES DA CLÍNICA (CARROSSEL AUTOMÁTICO E INTERATIVO) -->
+    <section id="especialidades" class="section-padding reveal" data-delay="0.7">
+        <div class="container">
+            
+            <div class="section-header text-center">
+                <span class="section-badge">O QUE OFERECEMOS</span>
+                <h2 class="section-title">Especialidades da Clínica</h2>
+            </div>
+
+            <!-- Estrutura do Carrossel Swiper -->
+            <div class="swiper swiper-especialidades">
+                <div class="swiper-wrapper">
+                    
+                    <!-- Card 1 -->
+                    <div class="swiper-slide">
+                        <div class="specialty-card">
+                            <div class="specialty-icon">✨</div>
+                            <h3>Harmonização Facial</h3>
+                            <p>Procedimentos avançados para realçar os traços naturais do rosto com equilíbrio e sofisticação.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide">
+                        <div class="specialty-card">
+                            <div class="specialty-icon">💧</div>
+                            <h3>Bioestimuladores de Colágeno</h3>
+                            <p>Tratamentos para firmeza, elasticidade e rejuvenescimento profundo da pele.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide">
+                        <div class="specialty-card">
+                            <div class="specialty-icon">🌿</div>
+                            <h3>Tecnologia & Lasers</h3>
+                            <p>Equipamentos de alta precisão para manchas, poros, textura e firmeza cutânea.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide">
+                        <div class="specialty-card">
+                            <div class="specialty-icon">🧬</div>
+                            <h3>Protocolos de Alta Performance</h3>
+                            <p>Combinações exclusivas formuladas sob medida para a necessidade de cada pele.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="swiper-slide">
+                        <div class="specialty-card">
+                            <div class="specialty-icon">💎</div>
+                            <h3>Rejuvenescimento Labial</h3>
+                            <p>Hidratação profunda e contorno delicado respeitando a anatomia natural.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Pontinhos de Navegação (Paginação) -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Setas de Navegação (Opcional) -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TRATAMENTOS DE DESTAQUE -->
+    <section id="tratamentos" class="section-padding reveal-scale" data-delay="0.2">
+        <div class="container">
+            <div class="services-wrapper-card">
+                <div class="services-header">
+                    <div class="services-header-left">
+                        <span class="services-badge">NOSSOS TRATAMENTOS</span>
+                        <h2 class="services-title">Escolha o Cuidado Ideal</h2>
+                    </div>
+                    <a href="https://wa.link/br26p5" target="_blank" rel="noopener noreferrer" class="services-link-all">
+                        Agendar Consulta <span>→</span>
+                    </a>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card reveal-up" data-delay="0.1">
+                        <div class="service-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/></svg>
+                        </div>
+                        <h3 class="service-card-title">Depilação a Laser</h3>
+                        <p class="service-card-desc">Tecnologia indolor de alta precisão para eliminação definitiva dos pelos com segurança.</p>
+                        <div class="service-card-img">
+                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="Depilação a Laser">
+                        </div>
+                        <div class="service-card-footer">
+                            <div class="service-price">
+                                <span class="price-label">A partir de</span>
+                                <span class="price-value">R$ 149,00</span>
+                            </div>
+                            <a href="https://wa.link/br26p5" target="_blank" rel="noopener noreferrer" class="btn-service-link">Agendar →</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card featured reveal-up" data-delay="0.2">
+                        <div class="popular-badge">MAIS PROCURADO</div>
+                        <div class="service-icon active">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                        <h3 class="service-card-title">Laser Lavieen Glow</h3>
+                        <p class="service-card-desc">Rejuvenescimento facial a laser para efeito BB Glow instantâneo e clareamento de manchas.</p>
+                        <div class="service-card-img">
+                            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=600&q=80" alt="Laser Lavieen Glow">
+                        </div>
+                        <div class="service-card-footer">
+                            <div class="service-price">
+                                <span class="price-label">Sessão individual</span>
+                                <span class="price-value">R$ 490,00</span>
+                            </div>
+                            <a href="https://wa.link/br26p5" target="_blank" rel="noopener noreferrer" class="btn-service-solid">Agendar →</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card reveal-up" data-delay="0.3">
+                        <div class="service-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3 class="service-card-title">Toxina Botulínica</h3>
+                        <p class="service-card-desc">Prevenção e suavização de linhas de expressão com resultado extremamente natural.</p>
+                        <div class="service-card-img">
+                            <img src="https://images.unsplash.com/photo-1512290900673-7002b281f335?auto=format&fit=crop&w=600&q=80" alt="Toxina Botulínica">
+                        </div>
+                        <div class="service-card-footer">
+                            <div class="service-price">
+                                <span class="price-label">Aplicação facial</span>
+                                <span class="price-value">R$ 890,00</span>
+                            </div>
+                            <a href="https://wa.link/br26p5" target="_blank" rel="noopener noreferrer" class="btn-service-link">Agendar →</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card reveal-up" data-delay="0.4">
+                        <div class="service-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+                        </div>
+                        <h3 class="service-card-title">Harmonização Facial</h3>
+                        <p class="service-card-desc">Preenchimento para sustentação, contorno de mandíbula e definição de traços faciais.</p>
+                        <div class="service-card-img">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Harmonização Facial">
+                        </div>
+                        <div class="service-card-footer">
+                            <div class="service-price">
+                                <span class="price-label">A partir de</span>
+                                <span class="price-value">R$ 1.200,00</span>
+                            </div>
+                            <a href="https://wa.link/br26p5" target="_blank" rel="noopener noreferrer" class="btn-service-link">Agendar →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESULTADOS ANTES / DEPOIS E MÉTRICAS -->
+    <section id="resultados" class="section-padding bg-subtle reveal-scale" data-delay="0.2">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Transformações Reais</p>
+                <h2 class="section-title">Resultados Naturais</h2>
+            </div>
+
+            <div class="before-after-container reveal-up" data-delay="0.2">
+                <div class="before-img"></div>
+                <div class="after-img" id="after-image"></div>
+                <div class="slider-handle" id="slider-handle">
+                    <div class="slider-button">↔</div>
+                </div>
+                <input type="range" min="0" max="100" value="50" class="before-after-slider-input" id="before-after-input">
+            </div>
+
+            <!-- Cartão de Métricas -->
+            <div class="metrics-wrapper-card reveal-up" data-delay="0.3" style="margin-top: 60px;">
+                <div class="text-center">
+                    <span class="section-badge">EXCELÊNCIA COMPROVADA</span>
+                    <h2 class="section-title">Resultados que Transformam</h2>
+                    <p class="section-subtitle">Tecnologia de ponta aliada a protocolos exclusivos e alta satisfação de nossos pacientes.</p>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-number" data-target="5000" data-prefix="+" data-suffix="">0</span>
+                            <span class="metric-label">Pacientes</span>
+                        </div>
+                        <p class="metric-desc">Histórias e autoestimas transformadas com procedimentos seguros e personalizados.</p>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-number" data-target="99.2" data-prefix="" data-suffix="%" data-decimals="1">0</span>
+                            <span class="metric-label">Satisfação</span>
+                        </div>
+                        <p class="metric-desc">Aprovação baseada no acompanhamento, conforto e atenção no pós-procedimento.</p>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-number" data-target="10" data-prefix="+" data-suffix=" Anos">0</span>
+                            <span class="metric-label">Excelência</span>
+                        </div>
+                        <p class="metric-desc">Anos de constante inovação e aperfeiçoamento médico na estética avançada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section id="localizacao" class="section-padding reveal-scale" data-delay="0.2">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Privacidade & Conforto</p>
+                <h2 class="section-title">Onde Estamos</h2>
+            </div>
+
+            <div class="location-grid">
+                <div class="info-card reveal-left" data-delay="0.2">
+                    <div class="info-item">
+                        <h3>Localização</h3>
+                        <p>Atendimento presencial com hora marcada para garantir total privacidade e atenção exclusiva.</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>Horário de Atendimento</h3>
+                        <p>Segunda a Sexta: 08h às 19h</p>
+                    </div>
+
+                    <a href="https://wa.link/br26p5" target="_blank" rel="noopener noreferrer" class="btn-glow btn-full">Agendar pelo WhatsApp</a>
+                </div>
+
+                <div class="map-wrapper reveal-right" data-delay="0.3">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3483.212!2d-51.179!3d-29.168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjk_MTAnMDQuOCJTIDUxwrAxMCc0NC40Ilc!5e0!3m2!1spt-BR!2sbr!4v1600000000000!5m2!1spt-BR!2sbr" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer reveal" data-delay="0.2">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-logo">Diportella Laser</h3>
+                    <p class="footer-about">Atendimento humanizado, exclusivo e focado na sua saúde e bem-estar em um ambiente seguro e acolhedor.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Navegação</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">A Clínica</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#tratamentos">Tratamentos</a></li>
+                        <li><a href="#resultados">Resultados</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Atendimento</h4>
+                    <ul class="footer-contact">
+                        <li>📍 Atendimento Presencial</li>
+                        <li>⏰ Com agendamento prévio</li>
+                        <li>💬 <a href="https://wa.link/br26p5" target="_blank" rel="noopener noreferrer">Agendar via WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p class="disclaimer">Aviso Legal: As informações contidas neste site têm caráter informativo e não substituem a consulta médica presencial.</p>
+                
+                <div class="footer-credits">
+                    <p class="copyright">&copy; 2026 Clínica Diportella Laser. Todos os direitos reservados.</p>
+                    <p class="developer">Desenvolvido por <a href="https://nivotech.com.br" target="_blank" rel="noopener noreferrer">Nivotech</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Externos via CDN -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Arquivo JavaScript Principal -->
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
