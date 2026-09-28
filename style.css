@@ -126,12 +126,12 @@ body {
     align-items: center;
 }
 
-.logo-text {
-    font-family: var(--font-title);
-    font-size: 1.35rem;
-    font-weight: 700;
-    color: #ffffff;
-    letter-spacing: 1px;
+/* HEADER LOGO IMAGE */
+.header-logo-img {
+    height: 30px; /* Altura proporcional para caber no menu */
+    width: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .logo-text span {
@@ -1329,10 +1329,13 @@ body {
     gap: 20px;
 }
 
-.preloader-logo {
-    font-size: 2.2rem;
-    font-family: var(--font-title);
-    color: #ffffff;
+/* PRELOADER LOGO IMAGE */
+.preloader-logo-img {
+    max-width: 340px; /* Tamanho em destaque na tela de carregamento */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
 }
 
 .preloader-bar {
