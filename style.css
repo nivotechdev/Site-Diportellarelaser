@@ -128,7 +128,7 @@ body {
 
 /* HEADER LOGO IMAGE */
 .header-logo-img {
-    height: 42px; /* Altura proporcional para caber no menu */
+    height: 30px; /* Altura proporcional para caber no menu */
     width: auto;
     display: block;
     object-fit: contain;
@@ -1331,7 +1331,7 @@ body {
 
 /* PRELOADER LOGO IMAGE */
 .preloader-logo-img {
-    max-width: 210px; /* Tamanho em destaque na tela de carregamento */
+    max-width: 340px; /* Tamanho em destaque na tela de carregamento */
     height: auto;
     display: block;
     margin: 0 auto;
