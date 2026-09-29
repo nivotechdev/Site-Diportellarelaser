@@ -250,7 +250,7 @@
         </div>
     </section>
 
-    <!-- TRATAMENTOS DE DESTAQUE -->
+    <!-- TRATAMENTOS DE DESTAQUE (CARROSSEL COM MENSAGEM PERSONALIZADA PARA WHATSAPP) -->
     <section id="tratamentos" class="section-padding reveal-scale" data-delay="0.2">
         <div class="container">
             <div class="services-wrapper-card">
@@ -260,84 +260,177 @@
                         <h2 class="services-title">Escolha o Cuidado Ideal</h2>
                     </div>
                     <a href="https://wa.link/br26p5" target="_blank" rel="noopener noreferrer" class="services-link-all">
-                        Agendar Consulta <span>→</span>
+                        Ver Todos no WhatsApp <span>→</span>
                     </a>
                 </div>
 
-                <div class="services-grid">
-                    <div class="service-card reveal-up" data-delay="0.1">
-                        <div class="service-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/></svg>
-                        </div>
-                        <h3 class="service-card-title">Depilação a Laser</h3>
-                        <p class="service-card-desc">Tecnologia indolor de alta precisão para eliminação definitiva dos pelos com segurança.</p>
-                        <div class="service-card-img">
-                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="Depilação a Laser">
-                        </div>
-                        <div class="service-card-footer">
-                            <div class="service-price">
-                                <span class="price-label">A partir de</span>
-                                <span class="price-value">R$ 149,00</span>
+                <!-- Estrutura do Carrossel Swiper de Tratamentos -->
+                <div class="swiper swiper-tratamentos">
+                    <div class="swiper-wrapper">
+
+                        <!-- 1. Remoção a Laser -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Remoção a Laser</h3>
+                                <p class="service-card-desc">Remoção precisa e segura de micropigmentação e tatuagens com tecnologia avançada.</p>
+                                <div class="service-card-img">
+                                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="Remoção a Laser">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Remo%C3%A7%C3%A3o%20a%20Laser." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
                             </div>
-                            <a href="https://wa.link/br26p5" target="_blank" rel="noopener noreferrer" class="btn-service-link">Agendar →</a>
                         </div>
+
+                        <!-- 2. PEIM (Microvasos) -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">PEIM (Microvasos)</h3>
+                                <p class="service-card-desc">Procedimento estético injetável para eliminação e suavização de microvasos.</p>
+                                <div class="service-card-img">
+                                    <img src="https://images.unsplash.com/photo-1512290900673-7002b281f335?auto=format&fit=crop&w=600&q=80" alt="PEIM Microvasos">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20PEIM%20(Microvasos)." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3. Limpeza de Pele Profunda -->
+                        <div class="swiper-slide">
+                            <div class="service-card featured">
+                                <div class="popular-badge">TÉCNICA ZERO DOR</div>
+                                <h3 class="service-card-title">Limpeza de Pele Profunda</h3>
+                                <p class="service-card-desc">Higienização profunda, remoção de impurezas e renovação celular sem desconforto.</p>
+                                <div class="service-card-img">
+                                    <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=600&q=80" alt="Limpeza de Pele Profunda">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Limpeza%20de%20Pele%20Profunda." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4. Microagulhamento -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Microagulhamento</h3>
+                                <p class="service-card-desc">Estímulo intenso de colágeno e reparo tecidual para rejuvenescimento e textura.</p>
+                                <div class="service-card-img">
+                                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Microagulhamento">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Microagulhamento." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5. Manchas e Espinhas -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Manchas e Espinhas</h3>
+                                <p class="service-card-desc">Protocolos específicos para controlo do acne, uniformização do tom e clareamento.</p>
+                                <div class="service-card-img">
+                                    <img src="https://images.unsplash.com/photo-1512290900673-7002b281f335?auto=format&fit=crop&w=600&q=80" alt="Tratamento para Manchas e Espinhas">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Tratamento%20de%20Manchas%20e%20Espinhas." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 6. Tratamento para Estrias -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Tratamento para Estrias</h3>
+                                <p class="service-card-desc">Regeneração cutânea focada na redução da largura, profundidade e cor das estrias.</p>
+                                <div class="service-card-img">
+                                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="Tratamento para Estrias">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Tratamento%20de%20Estrias." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 7. Toxina Botulínica -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Toxina Botulínica</h3>
+                                <p class="service-card-desc">Prevenção e suavização de rugas e linhas de expressão com acabamento natural.</p>
+                                <div class="service-card-img">
+                                    <img src="https://images.unsplash.com/photo-1512290900673-7002b281f335?auto=format&fit=crop&w=600&q=80" alt="Toxina Botulínica">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Toxina%20Botul%C3%ADnica." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 8. Preenchimento Labial -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Preenchimento Labial</h3>
+                                <p class="service-card-desc">Volume, hidratação e definição do contorno dos lábios respeitando a sua anatomia.</p>
+                                <div class="service-card-img">
+                                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Preenchimento Labial">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Preenchimento%20Labial." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 9. Harmonização Facial -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Harmonização Facial</h3>
+                                <p class="service-card-desc">Preenchimento Full-Face para sustentação, equilíbrio e definição dos traços faciais.</p>
+                                <div class="service-card-img">
+                                    <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=600&q=80" alt="Harmonização Facial">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Harmoniza%C3%A7%C3%A3o%20Facial." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 10. Peeling de Carbono -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Peeling de Carbono</h3>
+                                <p class="service-card-desc">Tratamento a laser com máscara de carbono para fechamento de poros e brilho radiante.</p>
+                                <div class="service-card-img">
+                                    <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="Peeling de Carbono">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Peeling%20de%20Carbono." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 11. Jato de Plasma -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Jato de Plasma</h3>
+                                <p class="service-card-desc">Tecnologia para retração de pálpebras, flacidez localizada e remoção de manchas estéticas.</p>
+                                <div class="service-card-img">
+                                    <img src="https://images.unsplash.com/photo-1512290900673-7002b281f335?auto=format&fit=crop&w=600&q=80" alt="Jato de Plasma">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Jato%20de%20Plasma." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="service-card featured reveal-up" data-delay="0.2">
-                        <div class="popular-badge">MAIS PROCURADO</div>
-                        <div class="service-icon active">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        </div>
-                        <h3 class="service-card-title">Laser Lavieen Glow</h3>
-                        <p class="service-card-desc">Rejuvenescimento facial a laser para efeito BB Glow instantâneo e clareamento de manchas.</p>
-                        <div class="service-card-img">
-                            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=600&q=80" alt="Laser Lavieen Glow">
-                        </div>
-                        <div class="service-card-footer">
-                            <div class="service-price">
-                                <span class="price-label">Sessão individual</span>
-                                <span class="price-value">R$ 490,00</span>
-                            </div>
-                            <a href="https://wa.link/br26p5" target="_blank" rel="noopener noreferrer" class="btn-service-solid">Agendar →</a>
-                        </div>
-                    </div>
-
-                    <div class="service-card reveal-up" data-delay="0.3">
-                        <div class="service-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                        </div>
-                        <h3 class="service-card-title">Toxina Botulínica</h3>
-                        <p class="service-card-desc">Prevenção e suavização de linhas de expressão com resultado extremamente natural.</p>
-                        <div class="service-card-img">
-                            <img src="https://images.unsplash.com/photo-1512290900673-7002b281f335?auto=format&fit=crop&w=600&q=80" alt="Toxina Botulínica">
-                        </div>
-                        <div class="service-card-footer">
-                            <div class="service-price">
-                                <span class="price-label">Aplicação facial</span>
-                                <span class="price-value">R$ 890,00</span>
-                            </div>
-                            <a href="https://wa.link/br26p5" target="_blank" rel="noopener noreferrer" class="btn-service-link">Agendar →</a>
-                        </div>
-                    </div>
-
-                    <div class="service-card reveal-up" data-delay="0.4">
-                        <div class="service-icon">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
-                        </div>
-                        <h3 class="service-card-title">Harmonização Facial</h3>
-                        <p class="service-card-desc">Preenchimento para sustentação, contorno de mandíbula e definição de traços faciais.</p>
-                        <div class="service-card-img">
-                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Harmonização Facial">
-                        </div>
-                        <div class="service-card-footer">
-                            <div class="service-price">
-                                <span class="price-label">A partir de</span>
-                                <span class="price-value">R$ 1.200,00</span>
-                            </div>
-                            <a href="https://wa.link/br26p5" target="_blank" rel="noopener noreferrer" class="btn-service-link">Agendar →</a>
-                        </div>
-                    </div>
+                    <!-- Controlo do Carrossel (Paginação e Setas) -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
+
             </div>
         </div>
     </section>

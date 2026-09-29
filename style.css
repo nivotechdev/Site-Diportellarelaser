@@ -980,6 +980,43 @@ body {
     border-radius: 20px;
     text-decoration: none;
 }
+/* ==========================================================================
+   CARROSSEL DE TRATAMENTOS
+   ========================================================================== */
+.swiper-tratamentos {
+    padding: 20px 10px 50px 10px !important;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-tratamentos .swiper-slide {
+    height: auto; /* Garante altura uniforme para todos os cards */
+    display: flex;
+}
+
+/* Ajuste nos Cards de Tratamento dentro do Swiper */
+.swiper-tratamentos .service-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn-full-card {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 10px 16px;
+    border-radius: 20px;
+    transition: var(--transition);
+}
+
+.btn-full-card:hover {
+    background: #d8bc94;
+    color: #0c1a14;
+    transform: translateY(-2px);
+}
 
 /* ==========================================================================
    MÉTRICAS & ANTES/DEPOIS
