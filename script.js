@@ -291,4 +291,44 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
+    // Carrossel da Secção Tratamentos
+    const swiperTratamentos = new Swiper('.swiper-tratamentos', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        grabCursor: true,
+
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+
+        speed: 800,
+
+        pagination: {
+            el: '.swiper-tratamentos .swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-tratamentos .swiper-button-next',
+            prevEl: '.swiper-tratamentos .swiper-button-prev',
+        },
+
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 24,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 24,
+            }
+        }
+    });
 });
