@@ -136,34 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ----------------------------------------------------------------------
-    // 5. CURSOR MAGNÉTICO
-    // ----------------------------------------------------------------------
-    const cursorDot = document.querySelector('.cursor-dot');
-    const cursorOutline = document.querySelector('.cursor-outline');
-
-    if (cursorDot && cursorOutline && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-        window.addEventListener('mousemove', (e) => {
-            const posX = e.clientX;
-            const posY = e.clientY;
-
-            cursorDot.style.left = `${posX}px`;
-            cursorDot.style.top = `${posY}px`;
-
-            cursorOutline.animate({
-                left: `${posX}px`,
-                top: `${posY}px`
-            }, { duration: 400, fill: "forwards" });
-        });
-
-        const interactiveElements = document.querySelectorAll('a, button, input, .bento-card, .service-card');
-        interactiveElements.forEach(el => {
-            el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
-            el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
-        });
-    }
-
-    // ----------------------------------------------------------------------
-    // 6. ILHA DINÂMICA NO HEADER
+    // 5. ILHA DINÂMICA NO HEADER
     // ----------------------------------------------------------------------
     const header = document.getElementById('header');
     const heroSection = document.getElementById('inicio');
@@ -182,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ----------------------------------------------------------------------
-    // 7. COMPARADOR ANTES E DEPOIS
+    // 6. COMPARADOR ANTES E DEPOIS
     // ----------------------------------------------------------------------
     const sliderInput = document.getElementById('before-after-input');
     const afterImage = document.getElementById('after-image');
@@ -197,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ----------------------------------------------------------------------
-    // 8. UNIFICAÇÃO DE ANIMAÇÕES REVEAL (GSAP)
+    // 7. UNIFICAÇÃO DE ANIMAÇÕES REVEAL (GSAP)
     // ----------------------------------------------------------------------
     if (hasGSAP && hasScrollTrigger) {
         const revealElements = document.querySelectorAll(

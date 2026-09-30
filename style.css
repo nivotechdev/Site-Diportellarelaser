@@ -30,12 +30,6 @@
     box-sizing: border-box;
 }
 
-/* Cursor customizado apenas em ecrãs com rato */
-@media (hover: hover) and (pointer: fine) {
-    * {
-        cursor: none !important;
-    }
-}
 
 html {
     background-color: var(--bg-dark);
@@ -51,45 +45,6 @@ body {
     line-height: 1.6;
 }
 
-/* ==========================================================================
-   CURSOR MAGNÉTICO
-   ========================================================================== */
-.cursor-dot, .cursor-outline {
-    display: none;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .cursor-dot, .cursor-outline {
-        display: block;
-        pointer-events: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        border-radius: 50%;
-        z-index: 9999;
-        transform: translate(-50%, -50%);
-        transition: transform 0.15s ease-out, width 0.2s, height 0.2s;
-    }
-
-    .cursor-dot {
-        width: 8px;
-        height: 8px;
-        background-color: var(--secondary);
-    }
-
-    .cursor-outline {
-        width: 40px;
-        height: 40px;
-        border: 1px solid rgba(240, 240, 216, 0.4);
-    }
-
-    body.hovering .cursor-outline {
-        width: 60px;
-        height: 60px;
-        background-color: rgba(240, 240, 216, 0.08);
-        border-color: var(--secondary);
-    }
-}
 
 /* ==========================================================================
    HEADER & ILHA DINÂMICA
