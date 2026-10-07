@@ -154,18 +154,55 @@ document.addEventListener('DOMContentLoaded', () => {
         checkScroll();
     }
 
+   // ----------------------------------------------------------------------
+    // 6. INTERAÇÃO DA GALERIA DE RESULTADOS (MODAL)
     // ----------------------------------------------------------------------
-    // 6. COMPARADOR ANTES E DEPOIS
-    // ----------------------------------------------------------------------
-    const sliderInput = document.getElementById('before-after-input');
-    const afterImage = document.getElementById('after-image');
-    const sliderHandle = document.getElementById('slider-handle');
+    const resultCards = document.querySelectorAll('.result-card');
+    const resultModal = document.getElementById('result-modal');
+    const resultModalClose = document.getElementById('result-modal-close');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDesc = document.getElementById('modal-desc');
 
-    if (sliderInput && afterImage && sliderHandle) {
-        sliderInput.addEventListener('input', (e) => {
-            const value = e.target.value;
-            afterImage.style.width = `${value}%`;
-            sliderHandle.style.left = `${value}%`;
+    if (resultCards.length > 0 && resultModal) {
+        // Ao clicar em um card
+        resultCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const title = card.getAttribute('data-title');
+                const desc = card.getAttribute('data-desc');
+
+                // Injeta os dados no HTML da subjanela
+                if (modalTitle) modalTitle.textContent = title;
+                if (modalDesc) modalDesc.textContent = desc;
+
+                // Mostra o modal e trava o scroll da página
+                resultModal.classList.add('active');
+                document.body.style.overflow = 'hidden'; 
+            });
+        });
+
+        // Função para fechar o modal
+        const closeModal = () => {
+            resultModal.classList.remove('active');
+            document.body.style.overflow = ''; // Devolve o scroll natural
+        };
+
+        // Fecha ao clicar no botão "X"
+        if (resultModalClose) {
+            resultModalClose.addEventListener('click', closeModal);
+        }
+
+        // Fecha ao clicar do lado de fora do card (no fundo escuro)
+        resultModal.addEventListener('click', (e) => {
+            if (e.target === resultModal) {
+                closeModal();
+            }
+        });
+        
+        // Acessibilidade: fechar com a tecla 'ESC'
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && resultModal.classList.contains('active')) {
+                closeModal();
+            }
         });
     }
 
