@@ -432,7 +432,7 @@
         </div>
     </section>
 
-    <!-- RESULTADOS ANTES / DEPOIS E MÉTRICAS -->
+<!-- RESULTADOS ANTES / DEPOIS E MÉTRICAS -->
     <section id="resultados" class="section-padding bg-subtle reveal-scale" data-delay="0.2">
         <div class="container">
             <div class="section-header">
@@ -440,14 +440,60 @@
                 <h2 class="section-title">Resultados Naturais</h2>
             </div>
 
-            <div class="before-after-container reveal-up" data-delay="0.2">
-                <div class="before-img"></div>
-                <div class="after-img" id="after-image"></div>
-                <div class="slider-handle" id="slider-handle">
-                    <div class="slider-button">↔</div>
+            <!-- NOVA GALERIA DE 3 IMAGENS -->
+            <div class="results-gallery reveal-up" data-delay="0.2">
+                <!-- Imagem 1: Limpeza de Pele -->
+                <div class="result-card" data-title="Limpeza de Pele Profunda" data-desc="Higienização completa que remove cravos, miliuns e impurezas. O resultado é uma pele iluminada, com textura uniforme e poros desobstruídos, devolvendo o viço e preparando o rosto para absorver melhor os ativos.">
+                    <div class="result-img-wrapper">
+                        <!-- Substitua por sua imagem combinada de "antes/depois" da limpeza -->
+                        <img src="img/Comparativo de Pele Antes e Depois.png" alt="Antes e Depois Limpeza de Pele">
+                        <div class="result-hover-overlay">
+                            <span>Ver Detalhes +</span>
+                        </div>
+                    </div>
+                    <h3 class="result-card-title">Limpeza de Pele</h3>
                 </div>
-                <input type="range" min="0" max="100" value="50" class="before-after-slider-input" id="before-after-input">
+
+                <!-- Imagem 2: Jato de Plasma -->
+                <div class="result-card" data-title="Jato de Plasma" data-desc="Tratamento inovador que promove a retração da pele e intenso estímulo de colágeno. Ideal para tratar flacidez palpebral, linhas de expressão e manchas, proporcionando um efeito lifting natural e rejuvenescedor sem a necessidade de cortes.">
+                    <div class="result-img-wrapper">
+                        <!-- Substitua por sua imagem combinada de "antes/depois" do plasma -->
+                        <img src="img/Resultados do Jato de Plasma na Pele.png" alt="Antes e Depois Jato de Plasma">
+                        <div class="result-hover-overlay">
+                            <span>Ver Detalhes +</span>
+                        </div>
+                    </div>
+                    <h3 class="result-card-title">Jato de Plasma</h3>
+                </div>
+
+                <!-- Imagem 3: Remoção a Laser -->
+                <div class="result-card" data-title="Remoção a Laser" data-desc="Tecnologia avançada de picossegundos ou nanosegundos para a fragmentação de pigmentos na pele. Permite a remoção segura e progressiva de tatuagens e micropigmentações indesejadas, preservando o tecido íntegro ao redor.">
+                    <div class="result-img-wrapper">
+                        <!-- Substitua por sua imagem combinada de "antes/depois" do laser -->
+                        <img src="img/Antes e Depois_ Remoção a Laser.png" alt="Antes e Depois Remoção a Laser">
+                        <div class="result-hover-overlay">
+                            <span>Ver Detalhes +</span>
+                        </div>
+                    </div>
+                    <h3 class="result-card-title">Remoção a Laser</h3>
+                </div>
             </div>
+
+            <!-- MODAL / SUBJANELA (Invisível por padrão) -->
+            <div class="result-modal-overlay" id="result-modal">
+                <div class="result-modal-card">
+                    <button class="result-modal-close" id="result-modal-close" aria-label="Fechar">&times;</button>
+                    <div class="result-modal-content">
+                        <h3 id="modal-title">Título do Tratamento</h3>
+                        <p id="modal-desc">Descrição detalhada do tratamento irá aparecer aqui.</p>
+                        <a href="https://api.whatsapp.com/send?phone=5554981114704&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20resultados." target="_blank" class="btn-glow" style="margin-top: 24px; padding: 12px 24px; font-size: 0.9rem;">Tenho Interesse</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cartão de Métricas (Mantenha o original) -->
+            <div class="metrics-wrapper-card reveal-up" data-delay="0.3" style="margin-top: 60px;">
+            <!-- ... Seu código de métricas continua aqui ... -->
 
             <!-- Cartão de Métricas -->
             <div class="metrics-wrapper-card reveal-up" data-delay="0.3" style="margin-top: 60px;">
@@ -543,9 +589,9 @@
                 <div>
                     <h4 class="footer-title">Atendimento</h4>
                     <ul class="footer-contact">
-                        <li>📍 Atendimento Presencial</li>
-                        <li>⏰ Com agendamento prévio</li>
-                        <li>💬 <a href="https://api.whatsapp.com/send?phone=5554981114704&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20e%20saber%20mais%20sobre%20a%20cl%C3%ADnica." target="_blank" rel="noopener noreferrer">Agendar via WhatsApp</a></li>
+                        <li> Atendimento Presencial</li>
+                        <li> Com agendamento prévio</li>
+                        <li> <a href="https://api.whatsapp.com/send?phone=5554981114704&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20e%20saber%20mais%20sobre%20a%20cl%C3%ADnica." target="_blank" rel="noopener noreferrer">Agendar via WhatsApp</a></li>
                     </ul>
                 </div>
             </div>
