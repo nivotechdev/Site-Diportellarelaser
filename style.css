@@ -43,6 +43,17 @@ body {
     background: radial-gradient(circle at 50% 0%, #0d3829 0%, var(--bg-dark) 70%);
     background-attachment: fixed;
     line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Garante que o tamanho das bordas e espaçamentos não quebre o layout */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Garante que o mapa respeite o tamanho da tela no mobile */
+.map-wrapper iframe {
+    max-width: 100%;
 }
 
 
