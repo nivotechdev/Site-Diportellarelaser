@@ -35,15 +35,17 @@ html {
     background-color: var(--bg-dark);
     color: var(--text-main);
     font-family: var(--font-body);
-    overflow-x: hidden;
+    /* Substitua o hidden por clip */
+    overflow-x: clip; 
 }
 
 body {
     position: relative;
     background: radial-gradient(circle at 50% 0%, #0d3829 0%, var(--bg-dark) 70%);
-    background-attachment: fixed;
+    /* Remova o background-attachment: fixed; */
     line-height: 1.6;
-    overflow-x: hidden;
+    /* Substitua o hidden por clip */
+    overflow-x: clip; 
 }
 
 /* Garante que o tamanho das bordas e espaçamentos não quebre o layout */
@@ -298,6 +300,7 @@ body {
         rgba(2, 8, 6, 0.88) 100%
     );
     z-index: 1;
+    pointer-events: none;
 }
 
 .hero-container-centered {
