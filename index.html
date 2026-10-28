@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Diportella Laser | Estética & Saúde</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lenis CSS (Smooth Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Arquivo CSS Principal -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="favicon/dianete.png">
+</head>
+<body>
+    <!-- PRELOADER -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <img src="img/logo_dianete.png" alt="Clínica Diportella Laser" class="preloader-logo-img">
+            <div class="preloader-bar">
+                <div class="preloader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- HEADER / NAVEGAÇÃO -->
+    <header id="header" class="header">
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="img/logo_dianete.png" alt="Clínica Diportella Laser" class="header-logo-img">
+            </div>
+
+            <!-- Navegação Desktop -->
+            <nav class="nav-desktop">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">A Clínica</a>
+                <a href="#especialidades">Especialidades</a>
+                <a href="#tratamentos">Tratamentos</a>
+                <a href="#resultados">Resultados</a>
+                <a href="https://api.whatsapp.com/send?phone=5554981114704&text=🌿%20Olá!%20Seja%20muito%20bem-vinda%20à%20Dianete%20Portella%20—%20Estética%20Avançada!%20✨%0A%0ASerá%20um%20prazer%20fazer%20parte%20da%20sua%20jornada%20de%20autocuidado%20e%20autoestima!%20💚%0A%0AAqui,%20cada%20atendimento%20é%20pensado%20de%20forma%20personalizada,%20valorizando%20sua%20beleza%20e%20o%20cuidado%20com%20a%20sua%20pele.%0A%0A🥰%20Para%20que%20eu%20possa%20te%20atender%20melhor,%20me%20conta:%20você%20gostaria%20de%20agendar%20uma%20avaliação%20ou%20saber%20mais%20sobre%20nossos%20procedimentos?%0A%0AEm%20breve,%20retornarei%20seu%20contato%20com%20todo%20carinho!%0AObrigada%20por%20escolher%20cuidar%20de%20você!%20❤️✨" target="_blank" rel="noopener noreferrer" class="btn-header">Agendar Consulta</a>
+            </nav>
+
+            <!-- Botão Menu Mobile -->
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Subjanela / Drawer do Menu Mobile -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div class="mobile-menu-card">
+            <div class="mobile-menu-header">
+                <span class="logo-text">DIPORTELLA <span>LASER</span></span>
+                <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Fechar Menu">&times;</button>
+            </div>
+
+            <nav class="mobile-nav-links">
+                <a href="#inicio" class="mobile-link">Início</a>
+                <a href="#sobre" class="mobile-link">A Clínica</a>
+                <a href="#especialidades" class="mobile-link">Especialidades</a>
+                <a href="#tratamentos" class="mobile-link">Tratamentos</a>
+                <a href="#resultados" class="mobile-link">Resultados</a>
+                <a href="https://api.whatsapp.com/send?phone=5554981114704&text=🌿%20Olá!%20Seja%20muito%20bem-vinda%20à%20Dianete%20Portella%20—%20Estética%20Avançada!%20✨%0A%0ASerá%20um%20prazer%20fazer%20parte%20da%20sua%20jornada%20de%20autocuidado%20e%20autoestima!%20💚%0A%0AAqui,%20cada%20atendimento%20é%20pensado%20de%20forma%20personalizada,%20valorizando%20sua%20beleza%20e%20o%20cuidado%20com%20a%20sua%20pele.%0A%0A🥰%20Para%20que%20eu%20possa%20te%20atender%20melhor,%20me%20conta:%20você%20gostaria%20de%20agendar%20uma%20avaliação%20ou%20saber%20mais%20sobre%20nossos%20procedimentos?%0A%0AEm%20breve,%20retornarei%20seu%20contato%20com%20todo%20carinho!%0AObrigada%20por%20escolher%20cuidar%20de%20você!%20❤️✨" target="_blank" rel="noopener noreferrer" class="btn-mobile-cta mobile-link">Agendar Consulta</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero hero-fullscreen">
+        <!-- Vídeo de fundo inserido aqui -->
+    <video autoplay muted loop playsinline class="hero-video-bg">
+        <source src="video/hero_dianete.mp4" type="video/mp4">
+    </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-container hero-container-centered">
+            <div class="hero-content">
+
+                <h1 class="hero-title">
+                    A arte de realçar a sua <em>beleza natural</em>.
+                </h1>
+
+                <p class="hero-description">
+                    Tratamentos de alta precisão desenvolvidos para proporcionar rejuvenescimento harmonioso com máxima segurança e discrição.
+                </p>
+
+                <div class="btn-group">
+                    <a href="https://api.whatsapp.com/send?phone=5554981114704&text=🌿%20Olá!%20Seja%20muito%20bem-vinda%20à%20Dianete%20Portella%20—%20Estética%20Avançada!%20✨%0A%0ASerá%20um%20prazer%20fazer%20parte%20da%20sua%20jornada%20de%20autocuidado%20e%20autoestima!%20💚%0A%0AAqui,%20cada%20atendimento%20é%20pensado%20de%20forma%20personalizada,%20valorizando%20sua%20beleza%20e%20o%20cuidado%20com%20a%20sua%20pele.%0A%0A🥰%20Para%20que%20eu%20possa%20te%20atender%20melhor,%20me%20conta:%20você%20gostaria%20de%20agendar%20uma%20avaliação%20ou%20saber%20mais%20sobre%20nossos%20procedimentos?%0A%0AEm%20breve,%20retornarei%20seu%20contato%20com%20todo%20carinho!%0AObrigada%20por%20escolher%20cuidar%20de%20você!%20❤️✨" target="_blank" rel="noopener noreferrer" class="btn-glow">Agendar Avaliação</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE A PROFISSIONAL (DESIGN EXATO DA FOTO) -->
+    <section id="sobre" class="section-padding reveal" data-delay="0.3">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Coluna da Esquerda: Imagem + Badge de Anos -->
+                <div class="about-image-wrapper reveal-left" data-delay="0.2">
+                    <div class="about-image-card">
+                        <img src="img/imagem_Dianete.jpg" alt="Dra. Dianete Portella">
+                        
+                        <div class="about-experience-badge">
+                            <span class="exp-number">10+</span>
+                            <span class="exp-text">ANOS DE EXCELÊNCIA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna da Direita: Conteúdo de Texto e Destaques -->
+                <div class="about-content reveal-right" data-delay="0.3">
+                    <span class="about-badge">SOBRE A PROFISSIONAL</span>
+                    <h2 class="about-title">Dra. Dianete Portella</h2>
+                    
+                    <div class="about-quote-wrapper">
+                        <div class="about-quote">
+                            Ciência, precisão e sensibilidade artística dedicadas à harmonização e saúde da sua pele.
+                        </div>
+                        <div class="quote-dot-icon">
+                            <span class="inner-dot"></span>
+                        </div>
+                    </div>
+
+                    <p class="about-description">
+                        Muito prazer, eu sou a Di!
+                        Minha história profissional começou na Enfermagem, há mais de 14 anos, e foi construída com muito aprendizado, dedicação e, acima de tudo, amor pelo cuidado.
+                        Hoje, como enfermeira pós-graduada em Estética e Cosmética, encontro na estética uma nova forma de exercer aquilo que sempre fez parte de mim: cuidar de pessoas.
+
+                    </p>
+                    <p class="about-description">
+                        Acredito que estética vai muito além da aparência. É sobre se olhar com carinho, sentir-se bem consigo mesma e resgatar a autoestima.
+                        E é com esse propósito que inicio esse novo capítulo: unindo conhecimento, segurança, cuidado e amor pelo que faço. ✨
+                        Que bom ter você por aqui. Seja bem-vinda(o)! 🌷
+                    </p>
+
+                    <!-- Cards de Destaque Lado a Lado -->
+                    <div class="about-highlights-grid">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <div class="highlight-text">
+                                <h4>Protocolos Exclusivos</h4>
+                                <p>Tratamentos desenhados sob medida para as necessidades da sua pele.</p>
+                            </div>
+                        </div>
+
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <div class="highlight-text">
+                                <h4>Segurança & Tecnologia</h4>
+                                <p>Equipamentos de última geração certificados com rigor científico.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO ESPECIALIDADES DA CLÍNICA (CARROSSEL AUTOMÁTICO E INTERATIVO) -->
+    <section id="especialidades" class="section-padding reveal" data-delay="0.7">
+        <div class="container">
+            
+            <div class="section-header text-center">
+                <span class="section-badge">O QUE OFERECEMOS</span>
+                <h2 class="section-title">Especialidades da Clínica</h2>
+            </div>
+
+            <!-- Estrutura do Carrossel Swiper -->
+            <div class="swiper swiper-especialidades">
+                <div class="swiper-wrapper">
+                    
+                    <!-- Card 1 -->
+                    <div class="swiper-slide">
+                        <div class="specialty-card">
+                            <div class="specialty-icon">✨</div>
+                            <h3>Harmonização Facial</h3>
+                            <p>Procedimentos avançados para realçar os traços naturais do rosto com equilíbrio e sofisticação.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide">
+                        <div class="specialty-card">
+                            <div class="specialty-icon">💧</div>
+                            <h3>Bioestimuladores de Colágeno</h3>
+                            <p>Tratamentos para firmeza, elasticidade e rejuvenescimento profundo da pele.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide">
+                        <div class="specialty-card">
+                            <div class="specialty-icon">🌿</div>
+                            <h3>Tecnologia & Lasers</h3>
+                            <p>Equipamentos de alta precisão para manchas, poros, textura e firmeza cutânea.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide">
+                        <div class="specialty-card">
+                            <div class="specialty-icon">🧬</div>
+                            <h3>Protocolos de Alta Performance</h3>
+                            <p>Combinações exclusivas formuladas sob medida para a necessidade de cada pele.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="swiper-slide">
+                        <div class="specialty-card">
+                            <div class="specialty-icon">💎</div>
+                            <h3>Rejuvenescimento Labial</h3>
+                            <p>Hidratação profunda e contorno delicado respeitando a anatomia natural.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Pontinhos de Navegação (Paginação) -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Setas de Navegação (Opcional) -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+        </div>
+    </section>
+
+   <!-- TRATAMENTOS DE DESTAQUE (CARROSSEL COM MENSAGEM PERSONALIZADA) -->
+    <section id="tratamentos" class="section-padding reveal-scale" data-delay="0.2">
+        <div class="container">
+            <div class="services-wrapper-card">
+                <div class="services-header">
+                    <div class="services-header-left">
+                        <span class="services-badge">NOSSOS TRATAMENTOS</span>
+                        <h2 class="services-title">Escolha o Cuidado Ideal</h2>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=5554981114704&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20tratamentos%20da%20cl%C3%ADnica." target="_blank" rel="noopener noreferrer" class="services-link-all">
+                        Ver Todos no WhatsApp <span>→</span>
+                    </a>
+                </div>
+
+                <!-- Estrutura do Carrossel Swiper de Tratamentos -->
+                <div class="swiper swiper-tratamentos">
+                    <div class="swiper-wrapper">
+
+                        <!-- 1. Remoção a Laser -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Remoção a Laser</h3>
+                                <p class="service-card-desc">Remoção precisa e segura de micropigmentação e tatuagens com tecnologia avançada.</p>
+                                <div class="service-card-img">
+                                    <img src="img/remocao-laser.jpg" alt="Remoção a Laser">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?phone=5554981114704&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Remo%C3%A7%C3%A3o%20a%20Laser." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. PEIM (Microvasos) -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">PEIM (Microvasos)</h3>
+                                <p class="service-card-desc">Procedimento estético injetável para eliminação e suavização de microvasos.</p>
+                                <div class="service-card-img">
+                                    <img src="img/microcravos.jpg" alt="PEIM Microvasos">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?phone=5554981114704&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20PEIM%20(Microvasos)." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3. Limpeza de Pele Profunda -->
+                        <div class="swiper-slide">
+                            <div class="service-card featured">
+                                <div class="popular-badge">TÉCNICA ZERO DOR</div>
+                                <h3 class="service-card-title">Limpeza de Pele Profunda</h3>
+                                <p class="service-card-desc">Higienização profunda, remoção de impurezas e renovação celular sem desconforto.</p>
+                                <div class="service-card-img">
+                                    <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=600&q=80" alt="Limpeza de Pele Profunda">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?phone=5554981114704&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Limpeza%20de%20Pele%20Profunda." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4. Microagulhamento -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Microagulhamento</h3>
+                                <p class="service-card-desc">Estímulo intenso de colágeno e reparo tecidual para rejuvenescimento e textura.</p>
+                                <div class="service-card-img">
+                                    <img src="img/microagulhamento.jpg" alt="Microagulhamento">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?phone=5554981114704&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Microagulhamento." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5. Manchas e Espinhas -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Manchas e Espinhas</h3>
+                                <p class="service-card-desc">Protocolos específicos para controle de acne, uniformização do tom e clareamento.</p>
+                                <div class="service-card-img">
+                                    <img src="img/manchas e espinhas.jpg" alt="Tratamento para Manchas e Espinhas">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?phone=5554981114704&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Tratamento%20de%20Manchas%20e%20Espinhas." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 6. Tratamento para Estrias -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Tratamento para Estrias</h3>
+                                <p class="service-card-desc">Regeneração cutânea focada na redução da largura, profundidade e cor das estrias.</p>
+                                <div class="service-card-img">
+                                    <img src="img/estrrias.jpg" alt="Tratamento para Estrias">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?phone=5554981114704&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Tratamento%20de%20Estrias." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 7. Toxina Botulínica -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Toxina Botulínica</h3>
+                                <p class="service-card-desc">Prevenção e suavização de rugas e linhas de expressão com acabamento natural.</p>
+                                <div class="service-card-img">
+                                    <img src="img/toxinia_botulinica.jpg" alt="Toxina Botulínica">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?phone=5554981114704&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Toxina%20Botul%C3%ADnica." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 8. Preenchimento Labial -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Preenchimento Labial</h3>
+                                <p class="service-card-desc">Volume, hidratação e definição do contorno dos lábios respeitando a sua anatomia.</p>
+                                <div class="service-card-img">
+                                    <img src="img/preenchimento_labial.jpg" alt="Preenchimento Labial">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?phone=5554981114704&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Preenchimento%20Labial." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 9. Preenchimento Full-Face -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Harmonização Facial</h3>
+                                <p class="service-card-desc">Preenchimento Full-Face para sustentação, equilíbrio e definição dos traços faciais.</p>
+                                <div class="service-card-img">
+                                    <img src="img/harmonizacao.jpg" alt="Harmonização Facial">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?phone=5554981114704&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Harmoniza%C3%A7%C3%A3o%20Facial." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 10. Peeling de Carbono -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Peeling de Carbono</h3>
+                                <p class="service-card-desc">Tratamento a laser com máscara de carbono para fechamento de poros e brilho radiante.</p>
+                                <div class="service-card-img">
+                                    <img src="img/carbono.jpg" alt="Peeling de Carbono">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?phone=5554981114704&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Peeling%20de%20Carbono." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 11. Jato de Plasma -->
+                        <div class="swiper-slide">
+                            <div class="service-card">
+                                <h3 class="service-card-title">Jato de Plasma</h3>
+                                <p class="service-card-desc">Tecnologia para retração de pálpebras, flacidez localizada e remoção de manchas estéticas.</p>
+                                <div class="service-card-img">
+                                    <img src="img/jato_plasma.jpg" alt="Jato de Plasma">
+                                </div>
+                                <div class="service-card-footer">
+                                    <a href="https://api.whatsapp.com/send?phone=5554981114704&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20e%20agendar%20uma%20consulta%20para%20Jato%20de%20Plasma." target="_blank" rel="noopener noreferrer" class="btn-service-solid btn-full-card">Agendar Consulta →</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Controles do Carrossel -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- RESULTADOS ANTES / DEPOIS E MÉTRICAS -->
+    <section id="resultados" class="section-padding bg-subtle reveal-scale" data-delay="0.2">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Transformações Reais</p>
+                <h2 class="section-title">Resultados Naturais</h2>
+            </div>
+
+            <!-- NOVA GALERIA DE 3 IMAGENS -->
+            <div class="results-gallery reveal-up" data-delay="0.2">
+                <!-- Imagem 1: Limpeza de Pele -->
+                <div class="result-card" data-title="Limpeza de Pele Profunda" data-desc="Higienização completa que remove cravos, miliuns e impurezas. O resultado é uma pele iluminada, com textura uniforme e poros desobstruídos, devolvendo o viço e preparando o rosto para absorver melhor os ativos.">
+                    <div class="result-img-wrapper">
+                        <!-- Substitua por sua imagem combinada de "antes/depois" da limpeza -->
+                        <img src="img/Comparativo de Pele Antes e Depois.png" alt="Antes e Depois Limpeza de Pele">
+                        <div class="result-hover-overlay">
+                            <span>Ver Detalhes +</span>
+                        </div>
+                    </div>
+                    <h3 class="result-card-title">Limpeza de Pele</h3>
+                </div>
+
+                <!-- Imagem 2: Jato de Plasma -->
+                <div class="result-card" data-title="Jato de Plasma" data-desc="Tratamento inovador que promove a retração da pele e intenso estímulo de colágeno. Ideal para tratar flacidez palpebral, linhas de expressão e manchas, proporcionando um efeito lifting natural e rejuvenescedor sem a necessidade de cortes.">
+                    <div class="result-img-wrapper">
+                        <!-- Substitua por sua imagem combinada de "antes/depois" do plasma -->
+                        <img src="img/Resultados do Jato de Plasma na Pele.png" alt="Antes e Depois Jato de Plasma">
+                        <div class="result-hover-overlay">
+                            <span>Ver Detalhes +</span>
+                        </div>
+                    </div>
+                    <h3 class="result-card-title">Jato de Plasma</h3>
+                </div>
+
+                <!-- Imagem 3: Remoção a Laser -->
+                <div class="result-card" data-title="Remoção a Laser" data-desc="Tecnologia avançada de picossegundos ou nanosegundos para a fragmentação de pigmentos na pele. Permite a remoção segura e progressiva de tatuagens e micropigmentações indesejadas, preservando o tecido íntegro ao redor.">
+                    <div class="result-img-wrapper">
+                        <!-- Substitua por sua imagem combinada de "antes/depois" do laser -->
+                        <img src="img/Antes e Depois_ Remoção a Laser.png" alt="Antes e Depois Remoção a Laser">
+                        <div class="result-hover-overlay">
+                            <span>Ver Detalhes +</span>
+                        </div>
+                    </div>
+                    <h3 class="result-card-title">Remoção a Laser</h3>
+                </div>
+            </div>
+
+            <!-- MODAL / SUBJANELA (Invisível por padrão) -->
+            <div class="result-modal-overlay" id="result-modal">
+                <div class="result-modal-card">
+                    <button class="result-modal-close" id="result-modal-close" aria-label="Fechar">&times;</button>
+                    <div class="result-modal-content">
+                        <h3 id="modal-title">Título do Tratamento</h3>
+                        <p id="modal-desc">Descrição detalhada do tratamento irá aparecer aqui.</p>
+                        <a href="https://api.whatsapp.com/send?phone=5554981114704&text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20resultados." target="_blank" class="btn-glow" style="margin-top: 24px; padding: 12px 24px; font-size: 0.9rem;">Tenho Interesse</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cartão de Métricas (Mantenha o original) -->
+            <div class="metrics-wrapper-card reveal-up" data-delay="0.3" style="margin-top: 60px;">
+            <!-- ... Seu código de métricas continua aqui ... -->
+
+            <!-- Cartão de Métricas -->
+            <div class="metrics-wrapper-card reveal-up" data-delay="0.3" style="margin-top: 60px;">
+                <div class="text-center">
+                    <span class="section-badge">EXCELÊNCIA COMPROVADA</span>
+                    <h2 class="section-title">Resultados que Transformam</h2>
+                    <p class="section-subtitle">Tecnologia de ponta aliada a protocolos exclusivos e alta satisfação de nossos pacientes.</p>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-number" data-target="5000" data-prefix="+" data-suffix="">0</span>
+                            <span class="metric-label">Pacientes</span>
+                        </div>
+                        <p class="metric-desc">Histórias e autoestimas transformadas com procedimentos seguros e personalizados.</p>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-number" data-target="99.2" data-prefix="" data-suffix="%" data-decimals="1">0</span>
+                            <span class="metric-label">Satisfação</span>
+                        </div>
+                        <p class="metric-desc">Aprovação baseada no acompanhamento, conforto e atenção no pós-procedimento.</p>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-number" data-target="10" data-prefix="+" data-suffix=" Anos">0</span>
+                            <span class="metric-label">Excelência</span>
+                        </div>
+                        <p class="metric-desc">Anos de constante inovação e aperfeiçoamento médico na estética avançada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section id="localizacao" class="section-padding reveal-scale" data-delay="0.2">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Privacidade & Conforto</p>
+                <h2 class="section-title">Onde Estamos</h2>
+            </div>
+
+            <div class="location-grid">
+                <div class="info-card reveal-left" data-delay="0.2">
+                    <div class="info-item">
+                        <h3>Localização</h3>
+                        <p>📍Endereço: Rua Sinimbu 2222</p>
+                        <p>🏢Sala 72 (sétimo andar)</p>
+                        <p>📬CEP: 95020520</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>Horário de Atendimento</h3>
+                        <p>Somente com hora marcada</p>
+                    </div>
+
+                    <a href="https://api.whatsapp.com/send?phone=5554981114704&text=🌿%20Olá!%20Seja%20muito%20bem-vinda%20à%20Dianete%20Portella%20—%20Estética%20Avançada!%20✨%0A%0ASerá%20um%20prazer%20fazer%20parte%20da%20sua%20jornada%20de%20autocuidado%20e%20autoestima!%20💚%0A%0AAqui,%20cada%20atendimento%20é%20pensado%20de%20forma%20personalizada,%20valorizando%20sua%20beleza%20e%20o%20cuidado%20com%20a%20sua%20pele.%0A%0A🥰%20Para%20que%20eu%20possa%20te%20atender%20melhor,%20me%20conta:%20você%20gostaria%20de%20agendar%20uma%20avaliação%20ou%20saber%20mais%20sobre%20nossos%20procedimentos?%0A%0AEm%20breve,%20retornarei%20seu%20contato%20com%20todo%20carinho!%0AObrigada%20por%20escolher%20cuidar%20de%20você!%20❤️✨" target="_blank" rel="noopener noreferrer" class="btn-glow btn-full">Agendar pelo WhatsApp</a>
+                </div>
+
+                <div class="map-wrapper reveal-right" data-delay="0.3">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=R.+Sinimbu,+2260+-+Centro,+Caxias+do+Sul+-+RS,+95020-520&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer reveal" data-delay="0.2">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-logo">Diportella Laser</h3>
+                    <p class="footer-about">Atendimento humanizado, exclusivo e focado na sua saúde e bem-estar em um ambiente seguro e acolhedor.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Navegação</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">A Clínica</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#tratamentos">Tratamentos</a></li>
+                        <li><a href="#resultados">Resultados</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Atendimento</h4>
+                    <ul class="footer-contact">
+                        <li> Atendimento Presencial</li>
+                        <li> Com agendamento prévio</li>
+                        <li> <a href="https://api.whatsapp.com/send?phone=5554981114704&text=🌿%20Olá!%20Seja%20muito%20bem-vinda%20à%20Dianete%20Portella%20—%20Estética%20Avançada!%20✨%0A%0ASerá%20um%20prazer%20fazer%20parte%20da%20sua%20jornada%20de%20autocuidado%20e%20autoestima!%20💚%0A%0AAqui,%20cada%20atendimento%20é%20pensado%20de%20forma%20personalizada,%20valorizando%20sua%20beleza%20e%20o%20cuidado%20com%20a%20sua%20pele.%0A%0A🥰%20Para%20que%20eu%20possa%20te%20atender%20melhor,%20me%20conta:%20você%20gostaria%20de%20agendar%20uma%20avaliação%20ou%20saber%20mais%20sobre%20nossos%20procedimentos?%0A%0AEm%20breve,%20retornarei%20seu%20contato%20com%20todo%20carinho!%0AObrigada%20por%20escolher%20cuidar%20de%20você!%20❤️✨" target="_blank" rel="noopener noreferrer">Agendar via WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p class="disclaimer">Aviso Legal: As informações contidas neste site têm caráter informativo e não substituem a consulta médica presencial.</p>
+                
+                <div class="footer-credits">
+                    <p class="copyright">&copy; 2026 Clínica Diportella Laser. Todos os direitos reservados.</p>
+                    <p class="developer">Desenvolvido por <a href="https://nivotech.com.br" target="_blank" rel="noopener noreferrer">Nivotech</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Externos via CDN -->
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Arquivo JavaScript Principal -->
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
